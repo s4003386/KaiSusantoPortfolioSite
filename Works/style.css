@@ -2,18 +2,43 @@ body{
     color: black;
 }
 
-.MainHeader{
+.Main{
     padding-left: 10%;
     padding-top: 10%;
+    color: white;
 }
 
 .HeaderTitle{
-    font-size: 700%;
+    font-size: 500%;
     color: white;
 }
 
-.Pages{
-    padding-left: 7%;
-    font-size: 200%;
+.PageHistory{
+
+    font-size: 100%;
     color: white;
+}
+
+.WorkDropdown{
+    flex-direction: column;
+    padding: 2%;
+    
+}
+
+.GalleryImage{
+    width: 10%;
+
+}
+
+.ProjectContainer{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+.ProjectContainerText{
+    
 }

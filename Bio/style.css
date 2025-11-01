@@ -1,0 +1,21 @@
+body{
+    color: black;
+}
+
+.Main{
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 10%;
+    color: white;
+}
+
+.HeaderTitle{
+    font-size: 500%;
+    color: white;
+}
+
+.PageHistory{
+
+    font-size: 100%;
+    color: white;
+}
