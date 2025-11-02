@@ -2,7 +2,7 @@
 
 const BioButton = document.getElementById('BioButton');
 const WorksButton = document.getElementById('WorksButton');
-const BackgroundImageDiv = document.querySelector(".skyImageDiv");
+//const BackgroundImageDiv = document.querySelector(".skyImageDiv");
 const overlay = document.querySelector(".whiteSlideBio");
 const mainPage = document.getElementById("mainPage");
 const bioPage = document.getElementById("bioPage");
@@ -14,7 +14,7 @@ const slideDuration = 1000;
 BioButton.addEventListener("click", function() {
     
     overlay.classList.add("active");
-    BackgroundImageDiv.classList.add("active");
+    //BackgroundImageDiv.classList.add("active");
 
     //setTimeout(() => {
     //mainPage.style.display = "none";
@@ -45,7 +45,14 @@ BioButton.textContent = originalBioButtonText;
         
 
 document.getElementById('WorksButton').addEventListener("click", function() {
-  alert("You clicked me (WorksButton)");
+        
+    overlay.classList.add("active");
+    
+    setTimeout(() => {
+        console.log("Redirecting...");
+        window.location.href = "Works/index.html"; 
+        
+    }, slideDuration);
 });
 
 
