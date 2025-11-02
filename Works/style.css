@@ -41,7 +41,7 @@ body{
     font-family: libre Baskerville;
 
     position: absolute;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .HeaderTitle{
@@ -98,6 +98,11 @@ background-color: grey;
     height: 80px;
     background-color: black;
     margin-bottom: 5%;
+    transition: height 0.4s ease;
+}
+
+.WorksBox:hover {
+    height: 200px; 
 }
 
 .WorksBoxImageWrapper{
@@ -113,6 +118,7 @@ background-color: grey;
     object-fit: cover;
 
 }
+
 
 
 
