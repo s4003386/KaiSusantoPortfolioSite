@@ -1,23 +1,123 @@
-body{
-    color: black;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.Main{
-    padding-left: 10%;
-    padding-top: 10%;
-    color: white;
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.coral-pixels-regular {
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.MainWrapper{
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-family: libre Baskerville;
+
+    position: absolute;
+    overflow: hidden;
 }
 
 .HeaderTitle{
-    font-size: 500%;
-    color: white;
+    margin-left: 14%;
+    font-size: 800%;
+    padding-top: 3%;
+
 }
 
 .PageHistory{
-
+    margin-left: 7%;
     font-size: 100%;
-    color: white;
+        font-size: 10%;
 }
+
+
+
+
+
+
+.skyBox{
+position: absolute;
+width: 20%;
+height: 70%;
+margin-left: 70%;
+background-color: grey;
+}
+
+.skyBoxImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.WorksGrid{
+    position: absolute;
+    margin-left: 14%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 50%;
+    height: 70%;
+    padding: 5%;
+}
+
+.WorksBox{
+
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    margin-bottom: 5%;
+}
+
+.WorksBoxImageWrapper{
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.WorksBoxImage{
+    object-fit: cover;
+
+}
+
+
+
+
+
 
 .WorkDropdown{
     flex-direction: column;
