@@ -36,10 +36,9 @@ body{
 
 .MainWrapper{
     width: 100%;
-    height: 100%;
+    height: 130%;
     color: rgb(0, 0, 0);
     font-family: libre Baskerville;
-
     position: absolute;
     overflow: auto;
 }
@@ -63,11 +62,15 @@ body{
 
 
 .skyBox{
-position: absolute;
+position: fixed;
+top: 0;
+right: 0; 
 width: 20%;
-height: 70%;
+height: 70vh;
 margin-left: 70%;
+margin-right: 10%;
 background-color: grey;
+
 }
 
 .skyBoxImage{
@@ -85,7 +88,7 @@ background-color: grey;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    overflow: hidden;
+    overflow: visible;
     width: 50%;
     height: 70%;
     padding: 5%;
@@ -145,6 +148,31 @@ background-color: grey;
 
 }
 
-.ProjectContainerText{
-    
+
+
+
+
+
+
+
+
+
+
+
+.whiteFade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease; /* controls fade speed */
+  z-index: 999;
+}
+
+.whiteSlideBio.active {
+  opacity: 1;
+  pointer-events: all;
 }
