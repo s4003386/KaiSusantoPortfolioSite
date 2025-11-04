@@ -24,12 +24,5 @@ window.addEventListener('scroll', () => {
 
 
 document.getElementById('Project1Box').addEventListener("click", function() {
-        
-    overlay.classList.add("active");
-    
-    setTimeout(() => {
-        console.log("Redirecting...");
-        window.location.href = "Works/index.html"; 
-        
-    }, slideDuration);
+  window.location.href = "Project1/index.html"; 
 });
