@@ -26,3 +26,19 @@ window.addEventListener('scroll', () => {
 document.getElementById('Project1Box').addEventListener("click", function() {
   window.location.href = "Project1/index.html"; 
 });
+
+document.getElementById('Project2Box').addEventListener("click", function() {
+  window.location.href = "Project2/index.html"; 
+});
+
+document.getElementById('Project3Box').addEventListener("click", function() {
+  window.location.href = "Project3/index.html"; 
+});
+
+document.getElementById('Project4Box').addEventListener("click", function() {
+  window.location.href = "Project4/index.html"; 
+});
+
+document.getElementById('Project5Box').addEventListener("click", function() {
+  window.location.href = "Project5/index.html"; 
+});

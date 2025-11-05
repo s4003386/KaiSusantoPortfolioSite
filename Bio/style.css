@@ -30,16 +30,41 @@ body{
     font-family: libre Baskerville;
 }
 
+mark{
+  background-color: rgb(193, 212, 255);
+}
+
 .Main{
-    padding-left: 10%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 10%;
     color: rgb(0, 0, 0);
 }
 
+.IconsBox{
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+}
+
+.IconsBox img{
+  padding: 6px;
+}
+
+
 .HeaderTitle{
-    font-size: 500%;
+    font-size: 600%;
     color: rgb(0, 0, 0);
+    margin-left: -10%;
+    padding-bottom: 5%;
+}
+
+.BioText{
+  font-size: medium;
+  padding-bottom: 3%;
 }
 
 .PageHistory{
