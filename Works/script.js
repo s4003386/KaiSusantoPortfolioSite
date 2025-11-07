@@ -1,4 +1,5 @@
 const overlayWhite = document.querySelector(".whiteFade");
+const slideDuration = 1000;
 
 
 
@@ -21,6 +22,21 @@ window.addEventListener('scroll', () => {
   skyBox.style.height = `${newHeight}vh`;
 });
 
+
+
+
+
+
+document.getElementById('HomeButton').addEventListener("click", function() {
+    enableMouse = false; 
+    document.querySelector('.skyBox').classList.add('active');
+
+    setTimeout(() => {
+        console.log("Redirecting...");
+        window.location.href = "../index.html"; 
+        
+    }, slideDuration);
+});
 
 
 document.getElementById('Project1Box').addEventListener("click", function() {
