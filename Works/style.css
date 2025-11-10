@@ -60,15 +60,24 @@ body{
 
 .HeaderTitle{
     margin-left: 14%;
-    font-size: 800%;
+      font-size: clamp(2.5rem, 15vw, 10rem);
     padding-top: 3%;
+        opacity: 0;
+    transition: all 1s ease-in-out;
 
+}
+
+.HeaderTitle.Show{
+  opacity: 1;
+}
+
+.HeaderTitle.Hide{
+  opacity: 1;
 }
 
 .PageHistory{
     margin-left: 7%;
-    font-size: 100%;
-        font-size: 10%;
+    font-size: clamp(0.2rem, 3.5vw, 1rem);
 }
 
 
@@ -106,7 +115,7 @@ transition: all 1s ease-in-out;
 
 
 
-.WorksGrid{
+.worksGrid{
     position: absolute;
     margin-left: 14%;
     flex-direction: row;
@@ -116,16 +125,42 @@ transition: all 1s ease-in-out;
     width: 50%;
     height: 70%;
     padding: 5%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
 
-.WorksBox{
+.worksGrid.Show{
+  opacity: 1;
+}
 
-    position: relative;
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    margin-bottom: 5%;
-    transition: height 0.4s ease;
+.worksGrid.Hide{
+  opacity: 0;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    
+
+
+.WorksBox {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  margin-bottom: 5%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: height 0.4s ease;
 }
 
 .WorksBox:hover {
@@ -157,6 +192,37 @@ transition: all 1s ease-in-out;
     padding: 2%;
     
 }
+
+
+
+
+.worksGrid.Show .WorksBox {
+  animation: fade-in-up 0.6s forwards;
+}
+
+.worksGrid.Show .WorksBox:nth-child(1) { animation-delay: 0.1s; }
+.worksGrid.Show .WorksBox:nth-child(2) { animation-delay: 0.3s; }
+.worksGrid.Show .WorksBox:nth-child(3) { animation-delay: 0.5s; }
+.worksGrid.Show .WorksBox:nth-child(4) { animation-delay: 0.7s; }
+.worksGrid.Show .WorksBox:nth-child(5) { animation-delay: 0.9s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .GalleryImage{
     width: 10%;

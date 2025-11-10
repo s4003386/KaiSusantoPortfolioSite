@@ -25,6 +25,12 @@
 }
 
 
+
+
+
+
+
+
 body{
     background-color: rgb(255, 255, 255);
     font-family: libre Baskerville;
@@ -37,12 +43,24 @@ mark{
 .Main{
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 10%;
+    padding-top: 6%;
+    opacity: 0;
     color: rgb(0, 0, 0);
+      transition: all 1s ease-in-out;
+}
+
+.Main.Show{
+
+  opacity: 1;
+}
+
+.Main.Hide{
+    opacity: 0;
 }
 
 .IconsBox{
-  width: 70px;
+  width: clamp(55px, 10vw, 100px);
+  height: auto; 
   display: flex;
   flex-direction: row;
   margin-top: 5px;
@@ -56,21 +74,37 @@ mark{
 
 
 .HeaderTitle{
-    font-size: 600%;
+      font-size: clamp(2.5rem, 10vw, 8rem);
     color: rgb(0, 0, 0);
     margin-left: -10%;
     padding-bottom: 5%;
+    opacity: 1;
+      transition: all 1s ease-in-out;
+}
+
+.HeaderTitle.Hide{
+  opacity: 0;
+  
 }
 
 .BioText{
   font-size: medium;
   padding-bottom: 3%;
+      opacity: 1;
+  font-size: clamp(0.3rem, 3.5vw, 1rem);
+    transition: all 1s ease-in-out;
+}
+
+.BioText.Hide{
+  opacity: 0;
+  
 }
 
 .PageHistory{
 
-    font-size: 100%;
+    font-size: clamp(0.3rem, 3.5vw, 1rem);
     color: rgb(0, 0, 0);
+    padding-bottom: 5%;
 }
 
 

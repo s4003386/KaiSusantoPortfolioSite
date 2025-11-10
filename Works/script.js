@@ -1,6 +1,17 @@
 const overlayWhite = document.querySelector(".whiteFade");
 const slideDuration = 1000;
 
+const worksGrid = document.getElementById("worksGrid"); //dont ask me why query selector doesnt work. i'm too tired
+const worksHeaderTitle = document.getElementById("worksHeaderTitle");
+
+window.onload = function() {
+  textShow();
+};
+
+function textShow(){
+    worksGrid.classList.add("Show");
+    worksHeaderTitle.classList.add("Show");
+};
 
 
 

@@ -122,10 +122,16 @@ body{
 
 .HeaderTitle{
     z-index: -3;
-    font-size: 800%;
+  font-size: clamp(4.5rem, 10vw, 10rem);
+  opacity: 1;
     margin-right: 6%;
     text-align: right;
     color: white;
+        transition: all 1s ease-in-out;
+}
+
+.HeaderTitle.Hide{
+  opacity: 0;
 }
 
 
@@ -158,6 +164,12 @@ body{
     padding-right: 7%;
     font-size: 200%;
     color: white;
+    opacity: 1;
+            transition: all 1s ease-in-out;
+}
+
+.Pages.Hide{
+ opacity: 0; 
 }
 
 .SubButton{

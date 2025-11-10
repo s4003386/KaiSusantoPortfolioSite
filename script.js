@@ -12,6 +12,11 @@ const overlay2 = document.querySelector(".whiteSlideBio2");
 const mainPage = document.getElementById("mainPage");
 const bioPage = document.getElementById("bioPage");
 
+
+//text
+const mainPageTitleText = document.getElementById("mainHeaderTitle");
+const mainPageButtonText = document.getElementById("mainButtons");
+
 const slideDuration = 1000;
 
 
@@ -19,6 +24,8 @@ const slideDuration = 1000;
 BioButton.addEventListener("click", function() {
     
     overlay.classList.add("active");
+    mainPageButtonText.classList.add("Hide");
+    mainPageTitleText.classList.add("Hide");
 
     setTimeout(() => {
         console.log("Redirecting...");
@@ -32,13 +39,13 @@ BioButton.addEventListener("click", function() {
 //transition from bio page
 window.addEventListener("DOMContentLoaded", () => {
     if (document.referrer.includes("Bio")) {
-        // Make overlay2 visible but allow interaction
+        
         overlay2.style.opacity = 1;
-        overlay2.style.pointerEvents = "none"; // ensure underlying page is clickable
+        overlay2.style.pointerEvents = "none"; 
 
-        // Slide down after a tiny delay
+        
         setTimeout(() => {
-            overlay2.classList.add("active"); // slide down off-screen
+            overlay2.classList.add("active"); 
         }, 50);
     }
 });
@@ -70,6 +77,9 @@ document.getElementById('WorksButton').addEventListener("click", function() {
     document.querySelector('.SkyImageDiv').classList.add('works');
     document.querySelector('.Background').classList.add('active');
     document.querySelector('.BlackGradient').classList.add('active');
+
+        mainPageButtonText.classList.add("Hide");
+    mainPageTitleText.classList.add("Hide");
     
     setTimeout(() => {
         console.log("Redirecting...");
@@ -115,8 +125,8 @@ document.addEventListener('mousemove', e => {
 function pickNewDriftTarget() {
   startDriftX = driftX;
   startDriftY = driftY;
-  targetDriftX = (Math.random() - 0.5) * 10; // ±5%
-  targetDriftY = (Math.random() - 0.5) * 10;
+  targetDriftX = (Math.random() - 0.5) * 30; // 
+  targetDriftY = (Math.random() - 0.5) * 30;
   driftStartTime = performance.now();
   driftDuration = 4000 + Math.random() * 2000; // 4–6s
   setTimeout(pickNewDriftTarget, driftDuration);
