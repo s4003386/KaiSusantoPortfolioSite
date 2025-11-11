@@ -42,6 +42,10 @@ document.getElementById('HomeButton').addEventListener("click", function() {
     enableMouse = false; 
     document.querySelector('.skyBox').classList.add('active');
 
+    document.querySelector('.HeaderTitle').classList.add('Hide');
+    document.querySelector('.worksGrid').classList.add('Hide');
+
+
     setTimeout(() => {
         console.log("Redirecting...");
         window.location.href = "../index.html"; 

@@ -12,6 +12,8 @@ const overlay2 = document.querySelector(".whiteSlideBio2");
 const mainPage = document.getElementById("mainPage");
 const bioPage = document.getElementById("bioPage");
 
+const noticeText =     document.getElementById("noticeText");
+
 
 //text
 const mainPageTitleText = document.getElementById("mainHeaderTitle");
@@ -26,6 +28,7 @@ BioButton.addEventListener("click", function() {
     overlay.classList.add("active");
     mainPageButtonText.classList.add("Hide");
     mainPageTitleText.classList.add("Hide");
+    noticeText.classList.add("Hide");
 
     setTimeout(() => {
         console.log("Redirecting...");
@@ -77,7 +80,8 @@ document.getElementById('WorksButton').addEventListener("click", function() {
     document.querySelector('.SkyImageDiv').classList.add('works');
     document.querySelector('.Background').classList.add('active');
     document.querySelector('.BlackGradient').classList.add('active');
-
+    
+    noticeText.classList.add("Hide");
         mainPageButtonText.classList.add("Hide");
     mainPageTitleText.classList.add("Hide");
     
