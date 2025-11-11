@@ -148,11 +148,9 @@ function animate() {
   const t = Math.min((now - driftStartTime) / driftDuration, 1);
   const easedT = easeInOut(t);
 
-  // Interpolate drift toward its current target using eased progress
   driftX = startDriftX + (targetDriftX - startDriftX) * easedT;
   driftY = startDriftY + (targetDriftY - startDriftY) * easedT;
 
-  // Combine drift and mouse offset
   const totalX = mouseX + driftX * 0.2;
   const totalY = mouseY + driftY * 0.2;
 

@@ -209,7 +209,7 @@ a:link, a:visited {
 }
 
 .whiteSlideBio.active {
-  transform: translateY(-100%); /* moves upward */
+  transform: translateY(-100%); /* moves upward??? */
 }
 
 
@@ -228,17 +228,17 @@ a:link, a:visited {
   transition: transform 1s ease-in-out;
   transform: translateY(0);    /* start full screen */
   pointer-events: none;        /* allow user to interact with page under it */
-  opacity: 0;                  /* hidden initially */
+  opacity: 0;                 
 }
 
 .whiteSlideBio2.active {
-  transform: translateY(100%); /* slide down off-screen */
-  opacity: 1;                   /* visible while animating */
-  pointer-events: none;         /* still non-blocking */
+  transform: translateY(100%); 
+  opacity: 1;                   
+  pointer-events: none;         
 }
 
 .whiteSlideBio2.deactive {
-  transform: translateY(0); /* full screen */
+  transform: translateY(0); 
 }
 
 
